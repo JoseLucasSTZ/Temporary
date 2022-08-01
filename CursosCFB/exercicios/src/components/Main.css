@@ -1,0 +1,8 @@
+.main{
+    background-color: green;
+    width: 80vw;
+    height: 80vh;
+    grid-area:main;
+    display: grid;
+    grid-template-rows:repeat(3, 1fr);
+}

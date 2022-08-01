@@ -1,0 +1,6 @@
+.aside{
+    height:80vh;
+    width: 20vw;
+    background-color:aqua;
+    grid-area: as;
+}

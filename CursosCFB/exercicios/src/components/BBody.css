@@ -1,10 +1,14 @@
+
 .Corpo {
     box-sizing: border-box;
     color: white;
     background-color: grey;
-    width: 100vw;
-    height: 100vh;
     display: grid;
-    grid-template-columns: 2 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 3 1fr;
+    grid-template-areas:
+        "hea hea"
+        "main as"
+        "ft ft"
+    ;
 }
