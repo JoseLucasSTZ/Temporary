@@ -5,7 +5,7 @@ export default function ComponentTop(){
     return (
         <>
         <article className='componentTop'>
-            hello top
+            Consulta aos dados
         </article>
         </>
     )
