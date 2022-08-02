@@ -1,11 +1,12 @@
 import React from 'react'
 import './ComponentTop.css'
+import ConsultaDados from './ConsultaDados'
 
 export default function ComponentTop(){
     return (
         <>
         <article className='componentTop'>
-            Consulta aos dados
+           <ConsultaDados />
         </article>
         </>
     )
