@@ -4,6 +4,7 @@ import ComponentMiddle from './ComponentMiddle'
 import ComponentTop from './ComponentTop'
 import ComponentBotton from './ComponentBotton'
 
+
 export default function Main(){ 
     return(
         <>
@@ -11,7 +12,6 @@ export default function Main(){
             <ComponentTop /> 
             <ComponentMiddle />
             <ComponentBotton />
-            
         </section>
         </>
     )
