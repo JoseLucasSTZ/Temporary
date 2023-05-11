@@ -7,31 +7,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <style>
+        .tachado {
+            text-decoration: line-through;
+        }
+
+        .ReduzirImagem {
+            width: 25%;
+            height: 25%;
+        }
+
+        .alinhamentoHorizontal {
+            display: flex;
+        }
+
+        .alinhamentoVertical {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+
+        .btn {
+            margin: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid white;
+            padding: 8px;
+        }
+
+        form {
+            margin: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <button id="botao">clique </button>
-    <ul id="listaItens">
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-    </ul>
     <section>
         <h1>Exercícios</h1>
         <ol>
-            <li>Crie uma página HTML com um botão e um contador. Ao clicar no botão, o contador deve incrementar seu
+            <li class="tachado">Crie uma página HTML com um botão e um contador. Ao clicar no botão, o contador deve
+                incrementar seu
                 valor em 1.</li>
-            <li>Crie uma página HTML com uma lista de itens e um botão "Adicionar". Ao clicar no botão, um novo item
+            <li class="tachado">Crie uma página HTML com uma lista de itens e um botão "Adicionar". Ao clicar no botão,
+                um novo item
                 digitado pelo usuário deve ser adicionado à lista.</li>
-            <li>Crie uma página HTML com uma imagem e dois botões: "Aumentar" e "Diminuir". Ao clicar nos botões, a
+            <li class="tachado">Crie uma página HTML com uma imagem e dois botões: "Aumentar" e "Diminuir". Ao clicar
+                nos botões, a
                 imagem deve aumentar ou diminuir de tamanho, respectivamente.</li>
-            <li>Crie uma página HTML com uma caixa de seleção (checkbox) e um parágrafo. Ao marcar a caixa de seleção, o
+            <li class="tachado">Crie uma página HTML com uma caixa de seleção (checkbox) e um parágrafo. Ao marcar a
+                caixa de seleção, o
                 parágrafo deve mudar sua cor de fundo.</li>
-            <li>Crie uma página HTML com uma tabela e um botão. Ao clicar no botão, uma nova linha deve ser adicionada à
+            <li class="tachado">Crie uma página HTML com uma tabela e um botão. Ao clicar no botão, uma nova linha deve ser adicionada à
                 tabela com dados inseridos pelo usuário.</li>
-            <li>Crie uma página HTML com uma lista de itens e um botão "Remover". Ao clicar no botão, o item selecionado
+            <li class="tachado">Crie uma página HTML com uma lista de itens e um botão "Remover". Ao clicar no botão, o item selecionado
                 na lista deve ser removido.</li>
             <li>Crie uma página HTML com um campo de entrada de texto e um botão. Ao clicar no botão, o texto digitado
                 deve ser exibido em negrito em um parágrafo abaixo.</li>
@@ -43,6 +78,61 @@
                 deve ser exibido em um elemento de cabeçalho (h1, h2, h3, etc.) com uma cor aleatória.</li>
         </ol>
     </section>
+    <div>
+        <h1>Exercícios 1 e 2 e 6</h1>
+        <button id="botao">Adicionar item</button>
+        <ul id="listaItens">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+        <button id="botaoRemoverItemExercicio1">Remover item</button>
+    </div>
+    <div>
+        <h1>Exercício 3</h1>
+        <div class="alinhamentoHorizontal">
+            <img class="ReduzirImagem"
+                src="https://images.unsplash.com/photo-1683463170635-a39ce9b0ecaf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+                id="imagemQueAumentaEDiminui" alt="">
+            <div class="alinhamentoVertical">
+                <button class="itemAlinhadoVerticalmente btn" id="botaoAumentar" type="submit">Aumentar</button>
+                <button class="itemAlinhadoVerticalmente btn" id="botaoDiminuir" type="submit">Reduzir </button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1>Exercício 04</h1>
+        <input type="checkbox" name="" id="checkBoxQueMudaFundo">
+        <label for="checkBoxQueMudaFundo">Marque para mudar o fundo</label>
+        <p id="paragrafoQueMudaDeFundo">Parágrafo que o fundo mudará de cor</p>
+    </div>
+    <div>
+        <h1>Exercício 05</h1>
+        <form action="">
+            <label for="NomeFormExercicio5">Nome</label>
+            <input type="text" id="NomeFormExercicio5">
+            <br>
+            <label for="ProfissaoFormExercicio5">Profissão</label>
+            <input type="text" id="ProfissaoFormExercicio5">
+            <br>
+            <label for="idadeFormExercicio5"> Idade</label>
+            <input type="number" id="idadeFormExercicio5">
+            <br>
+            <input type="button" id="botaoFormExercicio5" value="Adicionar na Tabela">
+        </form>
+        <table id="linhaOndeAdicionaCelulas">
+            <tr>
+                <thead>
+                    <td>Nome</td>
+                    <td>Profissão</td>
+                    <td>Idade</td>
+                </thead>
+            </tr>
+           
+        </table>
+    </div>
     <script src="script.js"></script>
 </body>
 
