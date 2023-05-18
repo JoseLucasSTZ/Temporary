@@ -5,6 +5,14 @@ const botaoDiminuir = document.getElementById("botaoDiminuir");
 const checkBoxQueMudaFundo = document.getElementById("checkBoxQueMudaFundo");
 const botaoFormExercicio5 = document.getElementById("botaoFormExercicio5");
 const botaoRemoverItemExercicio1 = document.getElementById("botaoRemoverItemExercicio1");
+const exercicio6Texto = document.getElementById("exercicio6Texto");
+const exercicio6Botao = document.getElementById("exercicio6Botao");
+const paragrafoExercicio6 = document.getElementById("paragrafoExercicio6");
+const divExercicio8 = document.getElementById("divExercicio8");
+const exercicio8Botao = document.getElementById("exercicio8Botao");
+const botaoExercicio9 = document.getElementById("botaoExercicio9");
+const imagemExercicio9 = document.getElementById("imagemExercicio9");
+const botao2Exercicio9 = document.getElementById("botao2Exercicio9");
 
 let linhaOndeAdicionaCelulas = document.getElementById("linhaOndeAdicionaCelulas");
 let paragrafoQueMudaDeFundo = document.getElementById("paragrafoQueMudaDeFundo");
@@ -89,4 +97,41 @@ botaoFormExercicio5.addEventListener('click', () => {
 
 });
 
-/*Exercício 06*/
+/*Exercício 07*/
+
+exercicio6Botao.addEventListener('click', () => {
+  let texto = exercicio6Texto.value;
+  paragrafoExercicio6.innerHTML += '<strong>' + texto + '</strong>';
+});
+
+/*Exercício 08*/
+
+exercicio8Botao.addEventListener('click', () => {
+  divExercicio8.style.fontWeight = 'bold';
+  setTimeout(() => {
+    divExercicio8.style.transform = 'translateX(200px)';
+    setTimeout(() => {
+      divExercicio8.style.transform = 'translateY(200px)';
+      setTimeout(() => {
+        divExercicio8.style.transform = 'translateY(0px)';
+        setTimeout(() => {
+          divExercicio8.style.transform = 'translateY(0px)';
+        }, 3000);
+      }, 3000);
+    }, 3000);
+  }, 3000);
+  
+});
+
+
+/*Exercício 9*/
+
+botaoExercicio9.addEventListener('click', () => {
+  imagemExercicio9.src = 'https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2187&q=80';
+});
+
+botao2Exercicio9.addEventListener('click', () => {
+  imagemExercicio9.src = 'https://images.unsplash.com/photo-1683463170635-a39ce9b0ecaf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80'
+});
+
+/* Exercício 10*/
