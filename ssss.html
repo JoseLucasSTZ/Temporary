@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leitura de arquivo JSON</title>
+  <script>
+    function handleFileSelect(event) {
+      const file = event.target.files[0];
+
+      const reader = new FileReader();
+      reader.onload = function(event) {
+        const jsonContent = event.target.result;
+        const data = JSON.parse(jsonContent);
+        // Faça algo com os dados do arquivo JSON
+        console.log(data);
+      };
+      reader.readAsText(file);
+    }
+  </script>
+</head>
+<body>
+  <input type="file" accept=".json" onchange="handleFileSelect(event)">
+</body>
+</html>

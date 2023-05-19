@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(59, 58, 58);
+    color: white;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: white;
+  }
+
+  .destacado {
+    background-color: yellow;
+    color: black;
+  }
+
+  .tachado {
+    text-decoration: line-through;
+}

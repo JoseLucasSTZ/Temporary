@@ -1,0 +1,237 @@
+{
+    "data": [
+      {
+        "title": "Star Wars: Episode IV - A New Hope",
+        "director": "George Lucas",
+        "release_date": "1977-05-25",
+        "characters": [
+          "Luke Skywalker",
+          "Princess Leia",
+          "Han Solo",
+          "Darth Vader",
+          "Obi-Wan Kenobi"
+        ]
+      },
+      {
+        "title": "Star Wars: Episode V - The Empire Strikes Back",
+        "director": "Irvin Kershner",
+        "release_date": "1980-05-17",
+        "characters": [
+          "Luke Skywalker",
+          "Princess Leia",
+          "Han Solo",
+          "Darth Vader",
+          "Yoda"
+        ]
+      },
+      {
+        "title": "Star Wars: Episode VI - Return of the Jedi",
+        "director": "Richard Marquand",
+        "release_date": "1983-05-25",
+        "characters": [
+          "Luke Skywalker",
+          "Princess Leia",
+          "Han Solo",
+          "Darth Vader",
+          "Emperor Palpatine"
+        ]
+      },
+      {
+        "title": "Star Wars: Episode I - The Phantom Menace",
+        "director": "George Lucas",
+        "release_date": "1999-05-19",
+        "characters": [
+          "Qui-Gon Jinn",
+          "Obi-Wan Kenobi",
+          "Anakin Skywalker",
+          "Padmé Amidala",
+          "Darth Maul"
+        ]
+      },
+      {
+        "title": "Star Wars: Episode II - Attack of the Clones",
+        "director": "George Lucas",
+        "release_date": "2002-05-16",
+        "characters": [
+          "Obi-Wan Kenobi",
+          "Anakin Skywalker",
+          "Padmé Amidala",
+          "Yoda",
+          "Count Dooku"
+        ]
+      },
+      {
+        "title": "Star Wars: Episode III - Revenge of the Sith",
+        "director": "George Lucas",
+        "release_date": "2005-05-19",
+        "characters": [
+          "Obi-Wan Kenobi",
+          "Anakin Skywalker",
+          "Padmé Amidala",
+          "Darth Sidious",
+          "General Grievous"
+        ]
+      },
+      {
+        "title": "Star Wars: The Clone Wars",
+        "director": "Dave Filoni",
+        "release_date": "2008-08-10",
+        "characters": [
+          "Anakin Skywalker",
+          "Obi-Wan Kenobi",
+          "Ahsoka Tano",
+          "Count Dooku",
+          "Asajj Ventress"
+        ]
+      },
+      {
+        "title": "Star Wars: Episode VII - The Force Awakens",
+        "director": "J.J. Abrams",
+        "release_date": "2015-12-18",
+        "characters": [
+          "Rey",
+          "Finn",
+          "Kylo Ren",
+          "Han Solo",
+          "Leia Organa"
+        ]
+      },
+      {
+        "title": "Rogue One: A Star Wars Story",
+        "director": "Gareth Edwards",
+        "release_date": "2016-12-16",
+        "characters": [
+          "Jyn Erso",
+          "Cassian Andor",
+          "K-2SO",
+          "Director Krennic",
+          "Darth Vader"
+        ]
+      },
+      {
+        "title": "Star Wars: Episode VIII - The Last Jedi",
+        "director": "Rian Johnson",
+        "release_date": "2017-12-15",
+        "characters": [
+          "Luke Skywalker",
+          "Rey",
+          "Kylo Ren",
+          "Leia Organa",
+          "Snoke"
+        ]
+      },
+      {
+        "title": "Solo: A Star Wars Story",
+        "director": "Ron Howard",
+        "release_date": "2018-05-25",
+        "characters": [
+          "Han Solo",
+          "Chewbacca",
+          "Lando Calrissian",
+          "Qi'ra",
+          "Darth Maul"
+        ]
+      },
+      {
+        "title": "Star Wars: Episode IX - The Rise of Skywalker",
+        "director": "J.J. Abrams",
+        "release_date": "2019-12-20",
+        "characters": [
+          "Rey",
+          "Finn",
+          "Kylo Ren",
+          "Luke Skywalker",
+          "Emperor Palpatine"
+        ]
+      },
+      {
+        "title": "The Mandalorian",
+        "director": "Jon Favreau",
+        "release_date": "2019-11-12",
+        "characters": [
+          "The Mandalorian",
+          "Baby Yoda (Grogu)",
+          "Greef Karga",
+          "Cara Dune",
+          "Moff Gideon"
+        ]
+      },
+      {
+        "title": "Star Wars: The Bad Batch",
+        "director": "Dave Filoni",
+        "release_date": "2021-05-04",
+        "characters": [
+          "Hunter",
+          "Echo",
+          "Tech",
+          "Wrecker",
+          "Crosshair"
+        ]
+      },
+      {
+        "title": "Star Wars: Visions",
+        "director": "Various",
+        "release_date": "2021-09-22",
+        "characters": [
+          "Various characters from different stories"
+        ]
+      },
+      {
+        "title": "Star Wars: The High Republic",
+        "director": "Various",
+        "release_date": "2021-01-05",
+        "characters": [
+          "Avar Kriss",
+          "Elzar Mann",
+          "Loden Greatstorm",
+          "Stellan Gios",
+          "Vernestra Rwoh"
+        ]
+      },
+      {
+        "title": "Star Wars: The Book of Boba Fett",
+        "director": "Robert Rodriguez",
+        "release_date": "2021-12-29",
+        "characters": [
+          "Boba Fett",
+          "Fennec Shand",
+          "Moff Gideon",
+          "Ahsoka Tano",
+          "Din Djarin (The Mandalorian)"
+        ]
+      },
+      {
+        "title": "Star Wars: Andor",
+        "director": "Tony Gilroy",
+        "release_date": "2022- TBD",
+        "characters": [
+          "Cassian Andor",
+          "K-2SO",
+          "Mon Mothma",
+          "Director Krennic",
+          "Bail Organa"
+        ]
+      },
+      {
+        "title": "Star Wars: Obi-Wan Kenobi",
+        "director": "Deborah Chow",
+        "release_date": "2022- TBD",
+        "characters": [
+          "Obi-Wan Kenobi",
+          "Darth Vader",
+          "Anakin Skywalker",
+          "Luke Skywalker",
+          "Princess Leia"
+        ]
+      },
+      {
+        "title": "Star Wars: The Acolyte",
+        "director": "Leslye Headland",
+        "release_date": "TBD",
+        "characters": [
+          "No specific characters announced"
+        ]
+      }
+    ]
+  }
+  
