@@ -13,6 +13,9 @@ const exercicio8Botao = document.getElementById("exercicio8Botao");
 const botaoExercicio9 = document.getElementById("botaoExercicio9");
 const imagemExercicio9 = document.getElementById("imagemExercicio9");
 const botao2Exercicio9 = document.getElementById("botao2Exercicio9");
+const botaoExercicio10 = document.getElementById("botaoExercicio10");
+const inputTextoExercicio10 = document.getElementById("inputTextoExercicio10");
+const paragrafoExercicio10 = document.getElementById("paragrafoExercicio10");
 
 let linhaOndeAdicionaCelulas = document.getElementById("linhaOndeAdicionaCelulas");
 let paragrafoQueMudaDeFundo = document.getElementById("paragrafoQueMudaDeFundo");
@@ -120,7 +123,7 @@ exercicio8Botao.addEventListener('click', () => {
       }, 3000);
     }, 3000);
   }, 3000);
-  
+
 });
 
 
@@ -135,3 +138,10 @@ botao2Exercicio9.addEventListener('click', () => {
 });
 
 /* Exercício 10*/
+
+
+botaoExercicio10.addEventListener('click', () => {
+  let textoExercicio10 = document.createTextNode()
+  textoExercicio10 = inputTextoExercicio10.value;
+  paragrafoExercicio10.innerHTML = textoExercicio10;  
+});
