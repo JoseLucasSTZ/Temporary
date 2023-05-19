@@ -138,10 +138,16 @@ botao2Exercicio9.addEventListener('click', () => {
 });
 
 /* Exercício 10*/
-
+function gerarCorAleatoria(){
+  let cores = ['h1', 'h2', 'h3', 'h4'];
+  let corAleatoria = cores[Math.floor(Math.random()*cores.length)];
+  return corAleatoria;
+}
 
 botaoExercicio10.addEventListener('click', () => {
-  let textoExercicio10 = document.createTextNode()
-  textoExercicio10 = inputTextoExercicio10.value;
-  paragrafoExercicio10.innerHTML = textoExercicio10;  
+  let textoExercicio10 = inputTextoExercicio10.value;
+  let corAleatorizada = gerarCorAleatoria();
+  paragrafoExercicio10.innerHTML = textoExercicio10; 
+  paragrafoExercicio10.setAttribute('class', corAleatorizada)
+
 });
