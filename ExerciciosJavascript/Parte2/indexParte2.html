@@ -20,12 +20,10 @@
             Crie uma página HTML com uma caixa de seleção e uma lista de itens. Ao marcar a caixa de seleção, os itens
             selecionados na lista devem ser destacados.
         </li>
-        <li>
-            Crie uma página HTML com um campo de entrada de texto e um botão de pesquisa. Ao digitar um termo no campo
-            de
-            entrada e clicar no botão, os resultados da pesquisa devem ser exibidos em uma lista.
+        <li class="tachado">
+            Crie uma página HTML com um botão de pesquisa. Ao clicar deve aparecer o conteúdo do arquivo JSON "dadosPiadas".
         </li>
-        <li>
+        <li class="tachado">
             Crie uma página HTML com um formulário de registro que inclua campos como nome, e-mail, senha, etc. Ao
             enviar o
             formulário, os dados devem ser validados e exibidos em uma mensagem de confirmação.
@@ -79,13 +77,24 @@
         <h1> Exercício 2</h1>
         <h4>Coloque o arquivo baixado aqui</h4>
         <input type="file" accept=".json" id="arquivoExercicio2" >
-        <h3>Pesquise uma Piada</h3>
-        <input type="text" name="" id="textoExercicio2">
+        <h3>Pesquise as piadas!</h3>
         <input type="button" value="Pesquisar" id="botaoExercicio2">
         <p id="paragrafoExercicio2"></p>
     </section>
-    <section>
+    <section id="secao3">
         <h1> Exercício 3</h1>
+        <form id="formExercicio3">
+            <label for="NomeExercicio3">Nome: </label>
+            <input type="text" id="NomeExercicio3">
+            <br>
+            <label for="emailExercicio3">E-mail: </label>
+            <input type="text" id="emailExercicio3">
+            <br>
+            <label for="idadeExercicio3">Idade: </label>
+            <input type="number" id="idadeExercicio3">
+            <br>
+            <button type="submit" id="botaoExercicio3">Enviar</button>
+        </form>
     </section>
     <section>
         <h1> Exercício 4</h1>
