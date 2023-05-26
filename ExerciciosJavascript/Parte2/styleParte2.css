@@ -1,23 +1,28 @@
 body {
-    background-color: rgb(59, 58, 58);
-    color: white;
-  }
+  background-color: rgb(59, 58, 58);
+  color: white;
+}
 
-  a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  a:visited {
-    text-decoration: none;
-    color: white;
-  }
+a {
+  text-decoration: none;
+  color: white;
+}
 
-  .destacado {
-    background-color: yellow;
-    color: black;
-  }
+a:visited {
+  text-decoration: none;
+  color: white;
+}
 
-  .tachado {
-    text-decoration: line-through;
+.destacado {
+  background-color: yellow;
+  color: black;
+}
+
+.tachado {
+  text-decoration: line-through;
+}
+
+.linhaVertical {
+  display: flex;
+  justify-content: center;
 }
