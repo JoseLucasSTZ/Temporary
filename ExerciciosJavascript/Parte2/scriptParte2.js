@@ -25,13 +25,17 @@ const botaoIniciarExercicio4 = document.getElementById(
 );
 
 const horaCronometro = document.getElementById("horaCronometro");
-const minutoCronometro =document.getElementById("minutoCronometro");
+const minutoCronometro = document.getElementById("minutoCronometro");
 const segundoCronometro = document.getElementById("segundoCronometro");
 
 let contadorTempo;
 let horas = 0;
 let minutos = 0;
 let segundos = 0;
+
+
+
+
 
 /*Exercício 1*/
 
@@ -46,7 +50,7 @@ botaoExercicio1.addEventListener("click", () => {
 });
 
 /*Exercício 2*/
-arquivoExercicio2.addEventListener("change", () => {});
+arquivoExercicio2.addEventListener("change", () => { });
 
 botaoExercicio2.addEventListener("click", () => {
   let ListaPiadas = arquivoExercicio2.files[0];
@@ -95,15 +99,20 @@ botaoExercicio3.addEventListener("click", (evento) => {
 
 function logicaCronometro() {
   segundos++;
+  segundoCronometro.innerHTML = segundos.toString().padStart(2, 0);
   if (segundos >= 60) {
     segundos = 0;
+    segundoCronometro.innerHTML = segundos.toString().padStart(2, 0);
     minutos++;
+    minutoCronometro.innerHTML = minutos.toString().padStart(2, 0);
   }
   if (minutos >= 60) {
     minutos = 0;
+    minutoCronometro.innerHTML = minutos.toString().padStart(2, 0);
     horas++;
+    horaCronometro.innerHTML = horas.toString().padStart(2, 0);
   }
-horaCronometro.
+
 }
 
 botaoIniciarExercicio4.addEventListener("click", () => {
@@ -112,9 +121,6 @@ botaoIniciarExercicio4.addEventListener("click", () => {
 
 botaoPausarExercicio4.addEventListener("click", () => {
   contadorTempo = 0;
-  console.log(segundos);
-  console.log(minutos);
-  console.log(horas);
 });
 
 botaoResetarExercicio4.addEventListener("click", () => {
@@ -123,8 +129,42 @@ botaoResetarExercicio4.addEventListener("click", () => {
   horas = 0;
 });
 
-/*Exercício 5*/
+/*Exercício 5*/ {
+  const exercicio5Anterior = document.getElementById('exercicio5Anterior');
+  const exercicio5Posterior = document.getElementById('exercicio5Posterior');
+  const ImagemExercicio5 = document.getElementById(`ImagemExercicio5`)
+  let arrayExercicio5Fontes = ['https://images.unsplash.com/photo-1684848141072-6a0370502661?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80', 'https://plus.unsplash.com/premium_photo-1683309555671-7efeac6caa3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80', 'https://images.unsplash.com/photo-1661956602153-23384936a1d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80']
 
+  function avancaImagem() {
+
+    if (ImagemExercicio5.src == arrayExercicio5Fontes[0]) {
+      ImagemExercicio5.src = arrayExercicio5Fontes[1];
+    } else if (ImagemExercicio5.src == arrayExercicio5Fontes[1]) {
+      ImagemExercicio5.src = arrayExercicio5Fontes[2];
+    } else if (ImagemExercicio5.src == arrayExercicio5Fontes[2]) {
+      ImagemExercicio5.src = arrayExercicio5Fontes[0];
+    }
+  };
+
+  function voltaImagem() {
+    if (ImagemExercicio5.src == arrayExercicio5Fontes[0]) {
+      ImagemExercicio5.src = arrayExercicio5Fontes[2];
+    } else if (ImagemExercicio5.src == arrayExercicio5Fontes[1]) {
+      ImagemExercicio5.src = arrayExercicio5Fontes[0];
+    } else if (ImagemExercicio5.src == arrayExercicio5Fontes[2]) {
+      ImagemExercicio5.src = arrayExercicio5Fontes[1];
+    }
+  };
+
+  exercicio5Anterior.addEventListener('click', () => {
+    voltaImagem();
+  });
+
+
+  exercicio5Posterior.addEventListener('click', () => {
+    avancaImagem();
+  });
+}
 /*Exercício 6*/
 
 /*Exercício 7*/

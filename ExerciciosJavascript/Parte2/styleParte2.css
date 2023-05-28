@@ -26,3 +26,8 @@ a:visited {
   display: flex;
   justify-content: center;
 }
+
+.imagemReduzida {
+  height: 300px;
+  width: 600px;
+}
