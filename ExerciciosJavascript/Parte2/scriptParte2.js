@@ -95,40 +95,40 @@ botaoExercicio3.addEventListener("click", (evento) => {
   }
 });
 
-/*Exercício 4*/
+/*Exercício 4*/{
 
-function logicaCronometro() {
-  segundos++;
-  segundoCronometro.innerHTML = segundos.toString().padStart(2, 0);
-  if (segundos >= 60) {
-    segundos = 0;
+  function logicaCronometro() {
+    segundos++;
     segundoCronometro.innerHTML = segundos.toString().padStart(2, 0);
-    minutos++;
-    minutoCronometro.innerHTML = minutos.toString().padStart(2, 0);
+    if (segundos >= 60) {
+      segundos = 0;
+      segundoCronometro.innerHTML = segundos.toString().padStart(2, 0);
+      minutos++;
+      minutoCronometro.innerHTML = minutos.toString().padStart(2, 0);
+    }
+    if (minutos >= 60) {
+      minutos = 0;
+      minutoCronometro.innerHTML = minutos.toString().padStart(2, 0);
+      horas++;
+      horaCronometro.innerHTML = horas.toString().padStart(2, 0);
+    }
+
   }
-  if (minutos >= 60) {
+
+  botaoIniciarExercicio4.addEventListener("click", () => {
+    contadorTempo = setInterval(logicaCronometro, 1000);
+  });
+
+  botaoPausarExercicio4.addEventListener("click", () => {
+    contadorTempo = 0;
+  });
+
+  botaoResetarExercicio4.addEventListener("click", () => {
     minutos = 0;
-    minutoCronometro.innerHTML = minutos.toString().padStart(2, 0);
-    horas++;
-    horaCronometro.innerHTML = horas.toString().padStart(2, 0);
-  }
-
+    segundos = 0;
+    horas = 0;
+  });
 }
-
-botaoIniciarExercicio4.addEventListener("click", () => {
-  contadorTempo = setInterval(logicaCronometro, 1000);
-});
-
-botaoPausarExercicio4.addEventListener("click", () => {
-  contadorTempo = 0;
-});
-
-botaoResetarExercicio4.addEventListener("click", () => {
-  minutos = 0;
-  segundos = 0;
-  horas = 0;
-});
-
 /*Exercício 5*/ {
   const exercicio5Anterior = document.getElementById('exercicio5Anterior');
   const exercicio5Posterior = document.getElementById('exercicio5Posterior');
@@ -165,7 +165,140 @@ botaoResetarExercicio4.addEventListener("click", () => {
     avancaImagem();
   });
 }
-/*Exercício 6*/
+/*Exercício 6 Versão 1*/{
+  const exercicio6n1 = document.getElementById('exercicio6n1');
+  const exercicio6n2 = document.getElementById('exercicio6n2');
+  const exercicio6n3 = document.getElementById('exercicio6n3');
+  const exercicio6n4 = document.getElementById('exercicio6n4');
+  const exercicio6n5 = document.getElementById('exercicio6n5');
+  const exercicio6n6 = document.getElementById('exercicio6n6');
+  const exercicio6n7 = document.getElementById('exercicio6n7');
+  const exercicio6n8 = document.getElementById('exercicio6n8');
+  const exercicio6n9 = document.getElementById('exercicio6n9');
+  const exercicio6n10 = document.getElementById('exercicio6n10');
+  const exercicio6n11 = document.getElementById('exercicio6n11');
+  const exercicio6n12 = document.getElementById('exercicio6n12');
+  const exercicio6n13 = document.getElementById('exercicio6n13');
+  const exercicio6n14 = document.getElementById('exercicio6n14');
+  const exercicio6n15 = document.getElementById('exercicio6n15');
+  const exercicio6n16 = document.getElementById('exercicio6n16');
+  const exercicio6n17 = document.getElementById('exercicio6n17');
+  const exercicio6n18 = document.getElementById('exercicio6n18');
+  const exercicio6n19 = document.getElementById('exercicio6n19');
+  const exercicio6n20 = document.getElementById('exercicio6n20');
+  const exercicio6n21 = document.getElementById('exercicio6n21');
+  const exercicio6n22 = document.getElementById('exercicio6n22');
+  const exercicio6n23 = document.getElementById('exercicio6n23');
+  const exercicio6n24 = document.getElementById('exercicio6n24');
+  const exercicio6n25 = document.getElementById('exercicio6n25');
+  const exercicio6n26 = document.getElementById('exercicio6n26');
+  const exercicio6n27 = document.getElementById('exercicio6n27');
+  const exercicio6n28 = document.getElementById('exercicio6n28');
+  const exercicio6n29 = document.getElementById('exercicio6n29');
+  const exercicio6n30 = document.getElementById('exercicio6n30');
+  const exercicio6n31 = document.getElementById('exercicio6n31');
+
+  const resultadoExercicio6Calendario = document.getElementById('resultadoExercicio6Calendario');
+
+  exercicio6n1.addEventListener('click', () => {
+    resultadoExercicio6Calendario.innerText = exercicio6n1.textContent
+  });
+
+  exercicio6n2.addEventListener('click', () => {
+    resultadoExercicio6Calendario.innerText = exercicio6n2.textContent
+  });
+  exercicio6n3.addEventListener('click', () => {
+    resultadoExercicio6Calendario.innerText = exercicio6n3.textContent
+  });
+  exercicio6n4.addEventListener('click', () => {
+    resultadoExercicio6Calendario.innerText = exercicio6n4.textContent
+  });
+  exercicio6n5.addEventListener('click', () => {
+    resultadoExercicio6Calendario.innerText = exercicio6n5.textContent
+  });
+  exercicio6n6.addEventListener('click', () => {
+    resultadoExercicio6Calendario.innerText = exercicio6n6.textContent
+  });
+  exercicio6n7.addEventListener('click', () => {
+    resultadoExercicio6Calendario.innerText = exercicio6n7.textContent
+  });
+  exercicio6n8.addEventListener('click', () => {
+    resultadoExercicio6Calendario.innerText = exercicio6n8.textContent
+  });
+  exercicio6n9.addEventListener('click', () => {
+    resultadoExercicio6Calendario.innerText = exercicio6n9.textContent
+  });
+  exercicio6n10.addEventListener('click', () => {
+    resultadoExercicio6Calendario.innerText = exercicio6n10.textContent
+  });
+  exercicio6n11.addEventListener('click', () => {
+    resultadoExercicio6Calendario.innerText = exercicio6n11.textContent
+  });
+  exercicio6n12.addEventListener('click', () => {
+    resultadoExercicio6Calendario.innerText = exercicio6n12.textContent
+  });
+  exercicio6n13.addEventListener('click', () => {
+    resultadoExercicio6Calendario.innerText = exercicio6n13.textContent
+  });
+  exercicio6n14.addEventListener('click', () => {
+    resultadoExercicio6Calendario.innerText = exercicio6n14.textContent
+  });
+  exercicio6n15.addEventListener('click', () => {
+    resultadoExercicio6Calendario.innerText = exercicio6n15.textContent
+  });
+  exercicio6n16.addEventListener('click', () => {
+    resultadoExercicio6Calendario.innerText = exercicio6n16.textContent
+  });
+  exercicio6n17.addEventListener('click', () => {
+    resultadoExercicio6Calendario.innerText = exercicio6n17.textContent
+  });
+  exercicio6n18.addEventListener('click', () => {
+    resultadoExercicio6Calendario.innerText = exercicio6n18.textContent
+  });
+  exercicio6n19.addEventListener('click', () => {
+    resultadoExercicio6Calendario.innerText = exercicio6n19.textContent
+  });
+  exercicio6n20.addEventListener('click', () => {
+    resultadoExercicio6Calendario.innerText = exercicio6n20.textContent
+  });
+  exercicio6n21.addEventListener('click', () => {
+    resultadoExercicio6Calendario.innerText = exercicio6n21.textContent
+  });
+  exercicio6n22.addEventListener('click', () => {
+    resultadoExercicio6Calendario.innerText = exercicio6n22.textContent
+  });
+  exercicio6n23.addEventListener('click', () => {
+    resultadoExercicio6Calendario.innerText = exercicio6n23.textContent
+  });
+  exercicio6n24.addEventListener('click', () => {
+    resultadoExercicio6Calendario.innerText = exercicio6n24.textContent
+  });
+  exercicio6n25.addEventListener('click', () => {
+    resultadoExercicio6Calendario.innerText = exercicio6n25.textContent
+  });
+  exercicio6n26.addEventListener('click', () => {
+    resultadoExercicio6Calendario.innerText = exercicio6n26.textContent
+  });
+  exercicio6n27.addEventListener('click', () => {
+    resultadoExercicio6Calendario.innerText = exercicio6n27.textContent
+  });
+  exercicio6n28.addEventListener('click', () => {
+    resultadoExercicio6Calendario.innerText = exercicio6n28.textContent
+  });
+  exercicio6n29.addEventListener('click', () => {
+    resultadoExercicio6Calendario.innerText = exercicio6n29.textContent
+  });
+  exercicio6n30.addEventListener('click', () => {
+    resultadoExercicio6Calendario.innerText = exercicio6n30.textContent
+  });
+  exercicio6n31.addEventListener('click', () => {
+    resultadoExercicio6Calendario.innerText = exercicio6n31.textContent
+  });
+}
+
+/* Exercício 6 Versão 2 */{ }
+
+/* */
 
 /*Exercício 7*/
 

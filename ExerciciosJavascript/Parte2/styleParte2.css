@@ -31,3 +31,15 @@ a:visited {
   height: 300px;
   width: 600px;
 }
+
+.justificado {
+  text-align: center;
+}
+
+.tableCalendario:hover {
+  transform: scale(1.2);
+}
+
+.verticalSimples {
+  display: inline-block;
+}
